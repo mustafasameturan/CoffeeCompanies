@@ -1,19 +1,19 @@
-package interfaceAbstractDemo.Entities;
+package Entities;
 
-import interfaceAbstractDemo.Entity;
+import Abstract.Entity;
 
 public class Customer implements Entity {
-	private int id;
-	private String firstName;
-	private String lastName;
-	private String dateOfBirth;
-	private String nationalityId;
+	public int id;
+	public String firstName;
+	public String lastName;
+	public int dateOfBirth;
+	public String nationalityId;
 	
 	public Customer() {
 		
 	}
 	
-	public Customer(int id, String firstName, String lastName, String dateOfBirth, String nationalityId) {
+	public Customer(int id, String firstName, String lastName, int dateOfBirth, String nationalityId) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -46,11 +46,11 @@ public class Customer implements Entity {
 		this.lastName = lastName;
 	}
 
-	public String getDateOfBirth() {
+	public int getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(String dateOfBirth) {
+	public void setDateOfBirth(int dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 
